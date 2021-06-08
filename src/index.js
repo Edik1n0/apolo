@@ -1,13 +1,13 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const request = require('request');
-const secretKey = '6LcAQioaAAAAAPzVsOtXMQkWIST80eeXVuWhJdzo';
+// const secretKey = '6LcAQioaAAAAAPzVsOtXMQkWIST80eeXVuWhJdzo';
 const morgan = require('morgan');
 const exphbs = require('express-handlebars');
 const path = require('path');
 const flash = require('connect-flash');
 const session = require('express-session');
-// const mySQLStore = require('express-mysql-session');
+const mySQLStore = require('express-mysql-session');
 const passport = require('passport');
 
 const { database } = require('./keys');
@@ -17,7 +17,7 @@ const app = express();
 require('./lib/passport');
 
 //Settings
-app.set('port', process.env.PORT || 9000);
+app.set('port', process.env.PORT || 4000);
 app.set('views', path.join(__dirname, 'views'));
 app.engine('.hbs', exphbs({
   defaultLayout: 'main',
@@ -28,28 +28,9 @@ app.engine('.hbs', exphbs({
 }));
 app.set('view engine', '.hbs');
 
-// app.post('/verify', () => {
-//   if (!req.body.captcha) {
-//     res.json({ 'msg': 'Captcha token is undefined' });
-//   }
-//   const verifyUrl = `https://www.google.com/recaptcha/api/siteverify?secret=${secretKey}&response=${req.body.captcha}`;
-
-//   request(verifyUrl, (err, response, body) => {
-//     if (err) {
-//       console.log(err);
-//     }
-//     body = JSON.parse(body);
-//     if (!body.success || body.score < 0.4) {
-//       return res.json({ 'msg': 'You might be a robot, sorry!! You are banned!', 'score': body.score });
-//     }
-
-//     return res.json({ 'msg': 'You have been verified! You may proceed', 'score': body.score });
-//   });
-// });
-
 //Middlewares
 app.use(session({
-  secret: 'k1nocomhandlebarssession',
+  secret: 'corporacionemergenciasapoloantioquia',
   resave: false,
   saveUninitialized: false,
   store: new mySQLStore(database)
