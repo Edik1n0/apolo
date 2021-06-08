@@ -1320,13 +1320,15 @@
 }
 .conoce .conoce__body .container .section__map .medellin .mun__img .medellin-blanco {
   position: relative;
-  bottom: 24px;
-  left: 100px;
+  bottom: 18px;
+  left: 98px;
   border: 1px solid green;
 }
 .conoce .conoce__body .container .section__map .medellin .mun__img .medellin-azul {
   display: none;
   position: relative;
+  bottom: 18px;
+  left: 98px;
   border: 1px solid green;
 }
 .conoce .conoce__body .container .section__map .medellin:hover {
