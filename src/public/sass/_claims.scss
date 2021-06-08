@@ -1,0 +1,131 @@
+.claims {
+    margin-top: 120px;
+    position: relative;
+    .container {
+        display: block;
+
+        .claims__fig {
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 80px;
+
+            .claim-a {
+                width: 20%;
+                text-align: center;
+                cursor: pointer;
+
+                .img__claim {
+                    width: 80px;
+                }
+
+                .txt__claim {
+                    margin-top: 20px;
+                    opacity: 0%;
+                }
+
+                &:hover {
+                    .txt__claim {
+                        transition: all .6s;
+                        opacity: 100%;
+                    }
+                }
+            }
+        }
+
+        .claims__mob {
+            display: none;
+        }
+    }
+}
+
+@media (min-width: 320px) and (max-width: 374px) {
+    .claims {
+        text-align: center;
+        .container {
+            .claims__fig {
+                display: none;
+            }
+
+            .claims__mob {
+                margin-top: 40px;
+                display: block;
+                text-align: center;
+                .claim-a {
+                    margin: 40px 20px 40px 20px;
+                    .img__claim {
+                        width: 80px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 375px) and (max-width: 409px) {
+    .claims {
+        text-align: center;
+        .container {
+            .claims__fig {
+                display: none;
+            }
+
+            .claims__mob {
+                margin-top: 40px;
+                display: block;
+                text-align: center;
+                .claim-a {
+                    margin: 40px 20px 40px 20px;
+                    .img__claim {
+                        width: 80px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 410px) and (max-width: 539px) {
+    .claims {
+        text-align: center;
+        .container {
+            .claims__fig {
+                display: none;
+            }
+
+            .claims__mob {
+                margin-top: 40px;
+                display: block;
+                text-align: center;
+                .claim-a {
+                    margin: 40px 20px 40px 20px;
+                    .img__claim {
+                        width: 80px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 540px) and (max-width: 767px) {
+    .claims {
+        text-align: center;
+        .container {
+            .claims__fig {
+                display: none;
+            }
+
+            .claims__mob {
+                margin-top: 40px;
+                display: block;
+                text-align: center;
+                .claim-a {
+                    margin: 40px 20px 40px 20px;
+                    .img__claim {
+                        width: 80px;
+                    }
+                }
+            }
+        }
+    }
+}

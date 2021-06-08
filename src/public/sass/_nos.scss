@@ -1,0 +1,195 @@
+.inner__nos {
+    width: 100%;
+    position: relative;
+}
+
+.inner__mob {
+    display: none;
+}
+
+.nos {
+    margin-top: 80px;
+    position: relative;
+    .container {
+        .nos__header {
+            margin-top: 60px;
+            text-align: center;
+        }
+
+        .nos__body {
+            display: block;
+
+            .nos__body--item {
+                display: block;
+                margin-top: 60px;
+
+                .item--title {
+                    text-align: center;
+                    margin-bottom: 40px;
+                }
+
+                .item--body {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    img {
+                        width: 500px;
+                        margin: 20px;
+                    }
+                    p {
+                        width: 30%;
+                    }
+                }
+            }
+
+        }
+
+        .partners {
+            text-align: center;
+            margin-top: 80px;
+            height: 460px;
+
+            .part__body {
+                margin-top: 60px;
+
+                .aliance {
+                    p {
+                        margin-top: 40px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 320px) and (max-width: 374px) {
+    .inner__nos {
+        display: none;
+    }
+
+    .inner__mob {
+        display: block;
+        width: 100%;
+        position: relative;
+    }
+
+    .nos {
+        .container {
+            .nos__body {
+                .nos__body--item {
+                    text-align: center;
+
+                    .item--body {
+                        display: block;
+                        img {
+                            width: 90%;
+                        }
+                        p {
+                            width: 100%;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 375px) and (max-width: 409px) {
+    .inner__nos {
+        display: none;
+    }
+
+    .inner__mob {
+        display: block;
+        width: 100%;
+        position: relative;
+    }
+
+    .nos {
+        .container {
+            .nos__body {
+                .nos__body--item {
+                    text-align: center;
+
+                    .item--body {
+                        display: block;
+                        img {
+                            width: 90%;
+                        }
+                        p {
+                            width: 100%;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 410px) and (max-width: 539px) {
+    .inner__nos {
+        display: none;
+    }
+
+    .inner__mob {
+        display: block;
+        width: 100%;
+        position: relative;
+    }
+
+    .nos {
+        .container {
+            .nos__body {
+                .nos__body--item {
+                    text-align: center;
+
+                    .item--body {
+                        display: block;
+                        img {
+                            width: 90%;
+                        }
+                        p {
+                            width: 100%;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 540px) and (max-width: 767px) {
+    .inner__nos {
+        display: none;
+    }
+
+    .inner__mob {
+        display: block;
+        width: 100%;
+        position: relative;
+    }
+
+    .nos {
+        .container {
+            .nos__body {
+                .nos__body--item {
+                    text-align: center;
+
+                    .item--body {
+                        display: block;
+                        img {
+                            width: 90%;
+                        }
+                        p {
+                            width: 100%;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
