@@ -126,294 +126,447 @@
 
     .conoce__body {
         .container {
-            border: 2px solid red;
             width: 100%;
             display: flex;
             justify-content: center;
 
             .section__map {
                 display: block;
-                border: 1px solid yellow;
-                width: 80%;
+                width: 60%;
 
-                .mun__text {
-                    border: 1px solid blue;
-                    display: flex;
-                    align-items: center;
-                    cursor: pointer;
-                }
+                .ciudades {
+                    .mun__text {
+                        display: flex;
+                        align-items: center;
+                        cursor: pointer;
+                    }
 
-                .medellin {
-                    display: flex;
-                    justify-content: space-between;
-                    border: 1px solid red;
-                    margin: 10px;
-                    height: 40px;
+                    .bar {
+                        display: flex;
+                        justify-content: space-between;
+                        margin: 10px;
+                        height: 40px;
 
-                    .mun__img {
-                        .medellin-blanco {
-                            position: relative;
-                            bottom: 18px;
-                            left: 98px;
-                            border: 1px solid green;
+                        .mun__img {
+                            .bar-blanco {
+                                position: relative;
+                                top: 42px;
+                                left: 214px;
+                            }
+
+                            .bar-azul {
+                                display: none;
+                                position: relative;
+                                top: 42px;
+                                left: 214px;
+                            }
                         }
 
-                        .medellin-azul {
-                            display: none;
-                            position: relative;
-                            bottom: 18px;
-                            left: 98px;
-                            border: 1px solid green;
+                        &:hover {
+                            transition: all 0.6s;
+                            .mun__text {
+                                transition: all 0.6s;
+                                color: $Blue;
+                            }
+
+                            .mun__img {
+                                transition: all 0.6s;
+                                .bar-blanco {
+                                    transition: all 0.6s;
+                                    display: none;
+                                }
+
+                                .bar-azul {
+                                    transition: all 0.6s;
+                                    display: block;
+                                }
+                            }
                         }
                     }
 
-                    &:hover {
-                        transition: all 0.6s;
-                        .mun__text {
-                            transition: all 0.6s;
-                            color: $Blue;
-                        }
+                    .girar {
+                        display: flex;
+                        justify-content: space-between;
+                        margin: 10px;
+                        height: 40px;
 
                         .mun__img {
-                            transition: all 0.6s;
-                            .medellin-blanco {
-                                transition: all 0.6s;
+                            .girar-blanco {
+                                position: relative;
+                                left: 46px;
+                                top: 76px;
+                            }
+
+                            .girar-azul {
                                 display: none;
+                                position: relative;
+                                left: 46px;
+                                top: 76px;
+                            }
+                        }
+
+                        &:hover {
+                            transition: all 0.6s;
+                            .mun__text {
+                                transition: all 0.6s;
+                                color: $Blue;
+                            }
+
+                            .mun__img {
+                                transition: all 0.6s;
+                                .girar-blanco {
+                                    transition: all 0.6s;
+                                    display: none;
+                                }
+
+                                .girar-azul {
+                                    transition: all 0.6s;
+                                    display: block;
+                                }
+                            }
+                        }
+                    }
+
+                    .copa {
+                        display: flex;
+                        justify-content: space-between;
+                        margin: 10px;
+                        height: 40px;
+
+                        .mun__img {
+                            .copa-blanco {
+                                position: relative;
+                                right: 4px;
+                                top: 38px;
+                            }
+
+                            .copa-azul {
+                                display: none;
+                                position: relative;
+                                right: 4px;
+                                top: 38px;
+                            }
+                        }
+
+                        &:hover {
+                            transition: all 0.6s;
+                            .mun__text {
+                                transition: all 0.6s;
+                                color: $Blue;
+                            }
+
+                            .mun__img {
+                                transition: all 0.6s;
+                                .copa-blanco {
+                                    transition: all 0.6s;
+                                    display: none;
+                                }
+
+                                .copa-azul {
+                                    transition: all 0.6s;
+                                    display: block;
+                                }
+                            }
+                        }
+                    }
+
+                    .bello {
+                        display: flex;
+                        justify-content: space-between;
+                        margin: 10px;
+                        height: 40px;
+
+                        .mun__img {
+                            .bello-blanco {
+                                position: relative;
+                                bottom: 18px;
+                                right: 68px;
+                            }
+
+                            .bello-azul {
+                                display: none;
+                                position: relative;
+                                bottom: 18px;
+                                right: 68px;
+                            }
+                        }
+
+                        &:hover {
+                            transition: all 0.6s;
+                            .mun__text {
+                                transition: all 0.6s;
+                                color: $Blue;
+                            }
+
+                            .mun__img {
+                                transition: all 0.6s;
+                                .bello-blanco {
+                                    transition: all 0.6s;
+                                    display: none;
+                                }
+
+                                .bello-azul {
+                                    transition: all 0.6s;
+                                    display: block;
+                                }
+                            }
+                        }
+                    }
+
+                    .medellin {
+                        display: flex;
+                        justify-content: space-between;
+                        margin: 10px;
+                        height: 40px;
+
+                        .mun__img {
+                            .medellin-blanco {
+                                position: relative;
+                                bottom: 14px;
+                                right: 26px;
                             }
 
                             .medellin-azul {
+                                display: none;
+                                position: relative;
+                                bottom: 14px;
+                                right: 26px;
+                            }
+                        }
+
+                        &:hover {
+                            transition: all 0.6s;
+                            .mun__text {
                                 transition: all 0.6s;
-                                display: block;
+                                color: $Blue;
+                            }
+
+                            .mun__img {
+                                transition: all 0.6s;
+                                .medellin-blanco {
+                                    transition: all 0.6s;
+                                    display: none;
+                                }
+
+                                .medellin-azul {
+                                    transition: all 0.6s;
+                                    display: block;
+                                }
                             }
                         }
                     }
-                }
 
-                .itagui {
-                    display: flex;
-                    justify-content: space-between;
-                    border: 1px solid red;
-                    margin: 10px;
-                    height: 40px;
-
-                    .mun__img {
-                        .itagui-blanco {
-                            position: relative;
-                            top: 102px;
-                            right: 10px;
-                            border: 1px solid green;
-                        }
-
-                        .itagui-azul {
-                            display: none;
-                            position: relative;
-                            top: 102px;
-                            right: 10px;
-                            border: 1px solid green;
-                        }
-                    }
-
-                    &:hover {
-                        transition: all 0.6s;
-                        .mun__text {
-                            transition: all 0.6s;
-                            color: $Blue;
-                        }
+                    .itagui {
+                        display: flex;
+                        justify-content: space-between;
+                        margin: 10px;
+                        height: 40px;
 
                         .mun__img {
-                            transition: all 0.6s;
                             .itagui-blanco {
-                                transition: all 0.6s;
-                                display: none;
+                                position: relative;
+                                top: 106px;
+                                right: 136px;
                             }
 
                             .itagui-azul {
+                                display: none;
+                                position: relative;
+                                top: 106px;
+                                right: 136px;
+                            }
+                        }
+
+                        &:hover {
+                            transition: all 0.6s;
+                            .mun__text {
                                 transition: all 0.6s;
-                                display: block;
+                                color: $Blue;
+                            }
+
+                            .mun__img {
+                                transition: all 0.6s;
+                                .itagui-blanco {
+                                    transition: all 0.6s;
+                                    display: none;
+                                }
+
+                                .itagui-azul {
+                                    transition: all 0.6s;
+                                    display: block;
+                                }
                             }
                         }
                     }
-                }
 
-                .envigado {
-                    display: flex;
-                    justify-content: space-between;
-                    border: 1px solid red;
-                    margin: 10px;
-                    height: 40px;
-
-                    .mun__img {
-                        .envigado-blanco {
-                            position: relative;
-                            left: 98px;
-                            top: 54px;
-                            border: 1px solid green;
-                        }
-
-                        .envigado-azul {
-                            display: none;
-                            position: relative;
-                            left: 98px;
-                            top: 54px;
-                            border: 1px solid green;
-                        }
-                    }
-
-                    &:hover {
-                        transition: all 0.6s;
-                        .mun__text {
-                            transition: all 0.6s;
-                            color: $Blue;
-                        }
+                    .envigado {
+                        display: flex;
+                        justify-content: space-between;
+                        margin: 10px;
+                        height: 40px;
 
                         .mun__img {
-                            transition: all 0.6s;
                             .envigado-blanco {
-                                transition: all 0.6s;
-                                display: none;
+                                position: relative;
+                                right: 30px;
+                                top: 52px;
                             }
 
                             .envigado-azul {
+                                display: none;
+                                position: relative;
+                                right: 30px;
+                                top: 52px;
+                            }
+                        }
+
+                        &:hover {
+                            transition: all 0.6s;
+                            .mun__text {
                                 transition: all 0.6s;
-                                display: block;
+                                color: $Blue;
+                            }
+
+                            .mun__img {
+                                transition: all 0.6s;
+                                .envigado-blanco {
+                                    transition: all 0.6s;
+                                    display: none;
+                                }
+
+                                .envigado-azul {
+                                    transition: all 0.6s;
+                                    display: block;
+                                }
                             }
                         }
                     }
-                }
 
-                .estrella {
-                    display: flex;
-                    justify-content: space-between;
-                    border: 1px solid red;
-                    margin: 10px;
-                    height: 40px;
-
-                    .mun__img {
-                        .estrella-blanco {
-                            position: relative;
-                            right: 32px;
-                            top: 30px;
-                            border: 1px solid green;
-                        }
-
-                        .estrella-azul {
-                            display: none;
-                            position: relative;
-                            right: 32px;
-                            top: 30px;
-                            border: 1px solid green;
-                        }
-                    }
-
-                    &:hover {
-                        transition: all 0.6s;
-                        .mun__text {
-                            transition: all 0.6s;
-                            color: $Blue;
-                        }
+                    .estrella {
+                        display: flex;
+                        justify-content: space-between;
+                        margin: 10px;
+                        height: 40px;
 
                         .mun__img {
-                            transition: all 0.6s;
                             .estrella-blanco {
-                                transition: all 0.6s;
-                                display: none;
+                                position: relative;
+                                right: 156px;
+                                top: 32px;
                             }
 
                             .estrella-azul {
+                                display: none;
+                                position: relative;
+                                right: 156px;
+                                top: 32px;
+                            }
+                        }
+
+                        &:hover {
+                            transition: all 0.6s;
+                            .mun__text {
                                 transition: all 0.6s;
-                                display: block;
+                                color: $Blue;
+                            }
+
+                            .mun__img {
+                                transition: all 0.6s;
+                                .estrella-blanco {
+                                    transition: all 0.6s;
+                                    display: none;
+                                }
+
+                                .estrella-azul {
+                                    transition: all 0.6s;
+                                    display: block;
+                                }
                             }
                         }
                     }
-                }
 
-                .sabaneta {
-                    border: 1px solid white;
-                    display: flex;
-                    justify-content: space-between;
-                    margin: 10px;
-                    height: 40px;
-
-                    .mun__img {
-                        .sabaneta-azul {
-                            display: none;
-                            border: 1px solid green;
-                            position: relative;
-                            top: -12px;
-                            right: 10px;
-                        }
-
-                        .sabaneta-blanco {
-                            border: 1px solid green;
-                            position: relative;
-                            top: -12px;
-                            right: 10px;
-                        }
-                    }
-
-                    &:hover {
-                        transition: all 0.6s;
-                        .mun__text {
-                            transition: all 0.6s;
-                            color: $Blue;
-                        }
+                    .sabaneta {
+                        display: flex;
+                        justify-content: space-between;
+                        margin: 10px;
+                        height: 40px;
 
                         .mun__img {
-                            transition: all 0.6s;
-                            .sabaneta-blanco {
-                                transition: all 0.6s;
-                                display: none;
-                            }
-
                             .sabaneta-azul {
+                                display: none;
+                                position: relative;
+                                bottom: 10px;
+                                right: 137px;
+                            }
+
+                            .sabaneta-blanco {
+                                position: relative;
+                                bottom: 10px;
+                                right: 137px;
+                            }
+                        }
+
+                        &:hover {
+                            transition: all 0.6s;
+                            .mun__text {
                                 transition: all 0.6s;
-                                display: block;
+                                color: $Blue;
+                            }
+
+                            .mun__img {
+                                transition: all 0.6s;
+                                .sabaneta-blanco {
+                                    transition: all 0.6s;
+                                    display: none;
+                                }
+
+                                .sabaneta-azul {
+                                    transition: all 0.6s;
+                                    display: block;
+                                }
                             }
                         }
                     }
-                }
 
-                .caldas {
-                    border: 1px solid white;
-                    display: flex;
-                    justify-content: space-between;
-                    margin: 10px;
-                    height: 40px;
-
-                    .mun__img {
-                        .caldas-azul {
-                            display: none;
-                            border: 1px solid green;
-                            position: relative;
-                            top: -16px;
-                            right: -4px;
-                        }
-
-                        .caldas-blanco {
-                            border: 1px solid green;
-                            position: relative;
-                            top: -16px;
-                            right: -4px;
-                        }
-                    }
-
-                    &:hover {
-                        transition: all 0.6s;
-                        .mun__text {
-                            transition: all 0.6s;
-                            color: $Blue;
-                        }
+                    .caldas {
+                        display: flex;
+                        justify-content: space-between;
+                        margin: 10px;
+                        height: 40px;
 
                         .mun__img {
-                            transition: all 0.6s;
-                            .caldas-blanco {
-                                transition: all 0.6s;
+                            .caldas-azul {
                                 display: none;
+                                position: relative;
+                                top: -16px;
+                                right: 120px;
                             }
 
-                            .caldas-azul {
+                            .caldas-blanco {
+                                position: relative;
+                                top: -16px;
+                                right: 120px;
+                            }
+                        }
+
+                        &:hover {
+                            transition: all 0.6s;
+                            .mun__text {
                                 transition: all 0.6s;
-                                display: block;
+                                color: $Blue;
+                            }
+
+                            .mun__img {
+                                transition: all 0.6s;
+                                .caldas-blanco {
+                                    transition: all 0.6s;
+                                    display: none;
+                                }
+
+                                .caldas-azul {
+                                    transition: all 0.6s;
+                                    display: block;
+                                }
                             }
                         }
                     }
