@@ -1331,6 +1331,34 @@
   cursor: pointer;
   text-decoration: none;
 }
+.conoce .conoce__body .container .section__map .ciudades .mun__text p i {
+  transition: all 0.8s;
+  font-size: 8px;
+  display: none;
+}
+.conoce .conoce__body .container .section__map .ciudades .mun__cont {
+  transition: all 0.8s;
+  display: none;
+  justify-content: center;
+  background: #15171a;
+  width: 220px;
+  height: 240px;
+  border-radius: 10px;
+}
+.conoce .conoce__body .container .section__map .ciudades .mun__cont .cont__title {
+  text-align: center;
+  height: 34px;
+  padding: 6px;
+}
+.conoce .conoce__body .container .section__map .ciudades .mun__cont .cont__body {
+  display: block;
+  text-align: center;
+  font-size: 10px;
+}
+.conoce .conoce__body .container .section__map .ciudades .mun__cont .cont__body .map__min {
+  width: 180px;
+  border-radius: 10px;
+}
 .conoce .conoce__body .container .section__map .ciudades .bar {
   display: flex;
   justify-content: space-between;
@@ -1353,7 +1381,11 @@
 }
 .conoce .conoce__body .container .section__map .ciudades .bar:hover .mun__text {
   transition: all 0.6s;
-  color: #133D87;
+  color: #BBCF0C;
+}
+.conoce .conoce__body .container .section__map .ciudades .bar:hover .mun__text p i {
+  transition: all 0.8s;
+  display: block;
 }
 .conoce .conoce__body .container .section__map .ciudades .bar:hover .mun__img {
   transition: all 0.6s;
@@ -1388,7 +1420,11 @@
 }
 .conoce .conoce__body .container .section__map .ciudades .girar:hover .mun__text {
   transition: all 0.6s;
-  color: #133D87;
+  color: #BBCF0C;
+}
+.conoce .conoce__body .container .section__map .ciudades .girar:hover .mun__text p i {
+  transition: all 0.8s;
+  display: block;
 }
 .conoce .conoce__body .container .section__map .ciudades .girar:hover .mun__img {
   transition: all 0.6s;
@@ -1423,7 +1459,11 @@
 }
 .conoce .conoce__body .container .section__map .ciudades .copa:hover .mun__text {
   transition: all 0.6s;
-  color: #133D87;
+  color: #BBCF0C;
+}
+.conoce .conoce__body .container .section__map .ciudades .copa:hover .mun__text p i {
+  transition: all 0.8s;
+  display: block;
 }
 .conoce .conoce__body .container .section__map .ciudades .copa:hover .mun__img {
   transition: all 0.6s;
@@ -1458,7 +1498,15 @@
 }
 .conoce .conoce__body .container .section__map .ciudades .bello:hover .mun__text {
   transition: all 0.6s;
-  color: #133D87;
+  color: #BBCF0C;
+}
+.conoce .conoce__body .container .section__map .ciudades .bello:hover .mun__text p i {
+  transition: all 0.8s;
+  display: block;
+}
+.conoce .conoce__body .container .section__map .ciudades .bello:hover .mun__cont {
+  transition: all 0.8s;
+  display: block;
 }
 .conoce .conoce__body .container .section__map .ciudades .bello:hover .mun__img {
   transition: all 0.6s;
@@ -1493,7 +1541,15 @@
 }
 .conoce .conoce__body .container .section__map .ciudades .medellin:hover .mun__text {
   transition: all 0.6s;
-  color: #133D87;
+  color: #BBCF0C;
+}
+.conoce .conoce__body .container .section__map .ciudades .medellin:hover .mun__text p i {
+  transition: all 0.8s;
+  display: block;
+}
+.conoce .conoce__body .container .section__map .ciudades .medellin:hover .mun__cont {
+  transition: all 0.8s;
+  display: block;
 }
 .conoce .conoce__body .container .section__map .ciudades .medellin:hover .mun__img {
   transition: all 0.6s;
@@ -1528,7 +1584,11 @@
 }
 .conoce .conoce__body .container .section__map .ciudades .itagui:hover .mun__text {
   transition: all 0.6s;
-  color: #133D87;
+  color: #BBCF0C;
+}
+.conoce .conoce__body .container .section__map .ciudades .itagui:hover .mun__text p i {
+  transition: all 0.8s;
+  display: block;
 }
 .conoce .conoce__body .container .section__map .ciudades .itagui:hover .mun__img {
   transition: all 0.6s;
@@ -1563,7 +1623,11 @@
 }
 .conoce .conoce__body .container .section__map .ciudades .envigado:hover .mun__text {
   transition: all 0.6s;
-  color: #133D87;
+  color: #BBCF0C;
+}
+.conoce .conoce__body .container .section__map .ciudades .envigado:hover .mun__text p i {
+  transition: all 0.8s;
+  display: block;
 }
 .conoce .conoce__body .container .section__map .ciudades .envigado:hover .mun__img {
   transition: all 0.6s;
@@ -1598,7 +1662,11 @@
 }
 .conoce .conoce__body .container .section__map .ciudades .estrella:hover .mun__text {
   transition: all 0.6s;
-  color: #133D87;
+  color: #BBCF0C;
+}
+.conoce .conoce__body .container .section__map .ciudades .estrella:hover .mun__text p i {
+  transition: all 0.8s;
+  display: block;
 }
 .conoce .conoce__body .container .section__map .ciudades .estrella:hover .mun__img {
   transition: all 0.6s;
@@ -1633,7 +1701,11 @@
 }
 .conoce .conoce__body .container .section__map .ciudades .sabaneta:hover .mun__text {
   transition: all 0.6s;
-  color: #133D87;
+  color: #BBCF0C;
+}
+.conoce .conoce__body .container .section__map .ciudades .sabaneta:hover .mun__text p i {
+  transition: all 0.8s;
+  display: block;
 }
 .conoce .conoce__body .container .section__map .ciudades .sabaneta:hover .mun__img {
   transition: all 0.6s;
@@ -1668,7 +1740,11 @@
 }
 .conoce .conoce__body .container .section__map .ciudades .caldas:hover .mun__text {
   transition: all 0.6s;
-  color: #133D87;
+  color: #BBCF0C;
+}
+.conoce .conoce__body .container .section__map .ciudades .caldas:hover .mun__text p i {
+  transition: all 0.8s;
+  display: block;
 }
 .conoce .conoce__body .container .section__map .ciudades .caldas:hover .mun__img {
   transition: all 0.6s;
