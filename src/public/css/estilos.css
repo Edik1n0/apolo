@@ -1758,7 +1758,7 @@
   display: block;
 }
 
-@media (min-width: 320px) {
+@media (min-width: 320px) and (max-width: 1024px) {
   .conoce {
     margin-top: 320px;
   }
@@ -1904,7 +1904,7 @@
   width: 44%;
 }
 
-@media (min-width: 320px) {
+@media (min-width: 320px) and (max-width: 1024px) {
   .vb .container {
     display: block;
   }
