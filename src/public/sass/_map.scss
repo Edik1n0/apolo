@@ -691,3 +691,189 @@
         }
     }
 }
+
+@media (min-width: 320px) {
+    .conoce {
+        margin-top: 320px;
+        .conoce__body {
+            .container {
+                display: block;
+                .section__map {
+                    width: 100%;
+
+                    .ciudades {
+                        position: relative;
+                        right: 116px;
+                        .mun__text {
+                            opacity: 0%;
+                        }
+
+                        img {
+                            width: 70%;
+                        }
+
+                        .mun__cont {
+                            position: relative;
+                            left: 130px;
+                            top: 260px;
+                        }
+
+                        .bar {
+                            .mun__img {
+                                .bar-blanco,
+                                .bar-azul {
+                                    top: 72px;
+                                    left: 180px;
+                                }
+                            }
+
+                            &:hover {
+                                .mun__img {
+                                    .bar-blanco {
+                                        transition: all 0.6s;
+                                        display: none;
+                                        top: 72px;
+                                        left: 180px;
+                                    }
+
+                                    .bar-azul {
+                                        transition: all 0.6s;
+                                        display: block;
+                                        top: 72px;
+                                        left: 180px;
+                                    }
+                                }
+                            }
+                        }
+
+                        .girar {
+                            .mun__img {
+                                .girar-blanco,
+                                .girar-azul {
+                                    left: 16px;
+                                    top: 76px;
+                                }
+                            }
+                        }
+
+                        .copa {
+                            .mun__img {
+                                .copa-blanco,
+                                .copa-azul {
+                                    right: 20px;
+                                    top: 34px;
+                                }
+                            }
+                        }
+
+                        .bello {
+                            .mun__img {
+                                .bello-blanco,
+                                .bello-azul {
+                                    bottom: 22px;
+                                    right: 46px;
+                                }
+                            }
+
+                            &:hover {
+                                .mun__img {
+                                    .bello-blanco {
+                                        display: none;
+                                        bottom: 22px;
+                                        right: 46px;
+                                    }
+
+                                    .bello-azul {
+                                        display: block;
+                                        bottom: 22px;
+                                        right: 98px;
+                                        width: 110%;
+                                    }
+                                }
+                            }
+                        }
+
+                        .medellin {
+                            .mun__img {
+                                .medellin-blanco,
+                                .medellin-azul {
+                                    bottom: 34px;
+                                    right: 0px;
+                                    left: 12px;
+                                }
+                            }
+
+                            &:hover {
+                                .mun__img {
+                                    .medellin-blanco {
+                                        display: none;
+                                        left: -136px;
+                                        width: 184%;
+                                        bottom: 28px;
+                                    }
+
+                                    .medellin-azul {
+                                        display: block;
+                                        left: -136px;
+                                        width: 184%;
+                                        bottom: 28px;
+                                    }
+                                }
+                            }
+                        }
+
+                        .itagui {
+                            .mun__img {
+                                .itagui-blanco,
+                                .itagui-azul {
+                                    top: 36px;
+                                    right: 116px;
+                                }
+                            }
+                        }
+
+                        .envigado {
+                            .mun__img {
+                                .envigado-blanco,
+                                .envigado-azul {
+                                    right: 22px;
+                                    top: -12px;
+                                }
+                            }
+                        }
+
+                        .estrella {
+                            .mun__img {
+                                .estrella-blanco,
+                                .estrella-azul {
+                                    right: 130px;
+                                    top: -44px;
+                                }
+                            }
+                        }
+
+                        .sabaneta {
+                            .mun__img {
+                                .sabaneta-blanco,
+                                .sabaneta-azul {
+                                    bottom: 88px;
+                                    right: 123px;
+                                }
+                            }
+                        }
+
+                        .caldas {
+                            .mun__img {
+                                .caldas-blanco,
+                                .caldas-azul {
+                                    top: -106px;
+                                    right: 96px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

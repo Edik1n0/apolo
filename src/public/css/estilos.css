@@ -1758,6 +1758,118 @@
   display: block;
 }
 
+@media (min-width: 320px) {
+  .conoce {
+    margin-top: 320px;
+  }
+  .conoce .conoce__body .container {
+    display: block;
+  }
+  .conoce .conoce__body .container .section__map {
+    width: 100%;
+  }
+  .conoce .conoce__body .container .section__map .ciudades {
+    position: relative;
+    right: 116px;
+  }
+  .conoce .conoce__body .container .section__map .ciudades .mun__text {
+    opacity: 0%;
+  }
+  .conoce .conoce__body .container .section__map .ciudades img {
+    width: 70%;
+  }
+  .conoce .conoce__body .container .section__map .ciudades .mun__cont {
+    position: relative;
+    left: 130px;
+    top: 260px;
+  }
+  .conoce .conoce__body .container .section__map .ciudades .bar .mun__img .bar-blanco,
+.conoce .conoce__body .container .section__map .ciudades .bar .mun__img .bar-azul {
+    top: 72px;
+    left: 180px;
+  }
+  .conoce .conoce__body .container .section__map .ciudades .bar:hover .mun__img .bar-blanco {
+    transition: all 0.6s;
+    display: none;
+    top: 72px;
+    left: 180px;
+  }
+  .conoce .conoce__body .container .section__map .ciudades .bar:hover .mun__img .bar-azul {
+    transition: all 0.6s;
+    display: block;
+    top: 72px;
+    left: 180px;
+  }
+  .conoce .conoce__body .container .section__map .ciudades .girar .mun__img .girar-blanco,
+.conoce .conoce__body .container .section__map .ciudades .girar .mun__img .girar-azul {
+    left: 16px;
+    top: 76px;
+  }
+  .conoce .conoce__body .container .section__map .ciudades .copa .mun__img .copa-blanco,
+.conoce .conoce__body .container .section__map .ciudades .copa .mun__img .copa-azul {
+    right: 20px;
+    top: 34px;
+  }
+  .conoce .conoce__body .container .section__map .ciudades .bello .mun__img .bello-blanco,
+.conoce .conoce__body .container .section__map .ciudades .bello .mun__img .bello-azul {
+    bottom: 22px;
+    right: 46px;
+  }
+  .conoce .conoce__body .container .section__map .ciudades .bello:hover .mun__img .bello-blanco {
+    display: none;
+    bottom: 22px;
+    right: 46px;
+  }
+  .conoce .conoce__body .container .section__map .ciudades .bello:hover .mun__img .bello-azul {
+    display: block;
+    bottom: 22px;
+    right: 98px;
+    width: 110%;
+  }
+  .conoce .conoce__body .container .section__map .ciudades .medellin .mun__img .medellin-blanco,
+.conoce .conoce__body .container .section__map .ciudades .medellin .mun__img .medellin-azul {
+    bottom: 34px;
+    right: 0px;
+    left: 12px;
+  }
+  .conoce .conoce__body .container .section__map .ciudades .medellin:hover .mun__img .medellin-blanco {
+    display: none;
+    left: -136px;
+    width: 184%;
+    bottom: 28px;
+  }
+  .conoce .conoce__body .container .section__map .ciudades .medellin:hover .mun__img .medellin-azul {
+    display: block;
+    left: -136px;
+    width: 184%;
+    bottom: 28px;
+  }
+  .conoce .conoce__body .container .section__map .ciudades .itagui .mun__img .itagui-blanco,
+.conoce .conoce__body .container .section__map .ciudades .itagui .mun__img .itagui-azul {
+    top: 36px;
+    right: 116px;
+  }
+  .conoce .conoce__body .container .section__map .ciudades .envigado .mun__img .envigado-blanco,
+.conoce .conoce__body .container .section__map .ciudades .envigado .mun__img .envigado-azul {
+    right: 22px;
+    top: -12px;
+  }
+  .conoce .conoce__body .container .section__map .ciudades .estrella .mun__img .estrella-blanco,
+.conoce .conoce__body .container .section__map .ciudades .estrella .mun__img .estrella-azul {
+    right: 130px;
+    top: -44px;
+  }
+  .conoce .conoce__body .container .section__map .ciudades .sabaneta .mun__img .sabaneta-blanco,
+.conoce .conoce__body .container .section__map .ciudades .sabaneta .mun__img .sabaneta-azul {
+    bottom: 88px;
+    right: 123px;
+  }
+  .conoce .conoce__body .container .section__map .ciudades .caldas .mun__img .caldas-blanco,
+.conoce .conoce__body .container .section__map .ciudades .caldas .mun__img .caldas-azul {
+    top: -106px;
+    right: 96px;
+  }
+}
 .con {
   margin-top: 60px;
 }
@@ -1792,6 +1904,15 @@
   width: 44%;
 }
 
+@media (min-width: 320px) {
+  .vb .container {
+    display: block;
+  }
+  .vb .container .video__section,
+.vb .container .text__section {
+    width: 100%;
+  }
+}
 body {
   background: #212529;
   color: #fff;
@@ -1917,6 +2038,7 @@ body {
 .icon-home,
 .icon-briefcase,
 .icon-medkit,
+.icon-user-md,
 .icon-picture,
 .icon-phone {
   color: #fff;
@@ -1924,6 +2046,7 @@ body {
 .icon-home:hover,
 .icon-briefcase:hover,
 .icon-medkit:hover,
+.icon-user-md:hover,
 .icon-picture:hover,
 .icon-phone:hover {
   transition: all 0.6s;
@@ -2170,7 +2293,7 @@ a:hover {
 
 @media (min-width: 320px) and (max-width: 374px) {
   .menu_redes {
-    background: #04b2a9;
+    background: #133D87;
     width: 100%;
     height: 90px;
     align-items: center;
@@ -2190,7 +2313,7 @@ a:hover {
   }
   .menu_redes .container .mr__social {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
   }
   .menu_redes .container .mr__social .social__title {
     padding: 8px 4px 4px 4px;
@@ -2333,7 +2456,7 @@ a:hover {
 }
 @media (min-width: 375px) and (max-width: 409px) {
   .menu_redes {
-    background: #04b2a9;
+    background: #133D87;
     width: 100%;
     height: 90px;
     align-items: center;
@@ -2353,7 +2476,7 @@ a:hover {
   }
   .menu_redes .container .mr__social {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
   }
   .menu_redes .container .mr__social .social__title {
     padding: 8px 4px 4px 4px;
@@ -2496,7 +2619,7 @@ a:hover {
 }
 @media (min-width: 410px) and (max-width: 539px) {
   .menu_redes {
-    background: #04b2a9;
+    background: #133D87;
     width: 100%;
     height: 90px;
     align-items: center;
@@ -2516,7 +2639,7 @@ a:hover {
   }
   .menu_redes .container .mr__social {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
   }
   .menu_redes .container .mr__social .social__title {
     padding: 8px 4px 4px 4px;
@@ -2659,7 +2782,7 @@ a:hover {
 }
 @media (min-width: 540px) and (max-width: 767px) {
   .menu_redes {
-    background: #04b2a9;
+    background: #133D87;
     width: 100%;
     height: 90px;
     align-items: center;
@@ -2679,7 +2802,7 @@ a:hover {
   }
   .menu_redes .container .mr__social {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
   }
   .menu_redes .container .mr__social .social__title {
     padding: 8px 4px 4px 4px;
@@ -2822,7 +2945,7 @@ a:hover {
 }
 @media (min-width: 768px) and (max-width: 1024px) {
   .menu_redes {
-    background: #04b2a9;
+    background: #133D87;
     width: 100%;
     height: 90px;
     align-items: center;
@@ -2842,7 +2965,7 @@ a:hover {
   }
   .menu_redes .container .mr__social {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
   }
   .menu_redes .container .mr__social .social__title {
     padding: 8px 4px 4px 4px;

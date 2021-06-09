@@ -25,3 +25,16 @@
         }
     }
 }
+
+@media (min-width: 320px) {
+    .vb {
+        .container {
+            display: block;
+
+            .video__section,
+            .text__section {
+                width: 100%
+            }
+        }
+    }
+}
