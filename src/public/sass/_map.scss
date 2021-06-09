@@ -15,7 +15,7 @@
             bottom: 500px;
             left: 980px;
             z-index: 1;
-            background: $Aqua;
+            background: $Blue;
             color: $bl;
             width: 440px;
             height: 460px;
@@ -63,14 +63,15 @@
 
             .boton_mapa {
                 background: $gris;
-                color: $Aqua;
-                border-radius: 12px 0px;
+                color: $bl;
+                border-radius: 8px;
                 padding: 4px;
                 margin-top: 16px;
 
                 &:hover {
                     transition: all 0.6s;
                     background: $bl;
+                    color: $Blue;
                 }
             }
 
@@ -116,6 +117,7 @@
 }
 
 .conoce {
+    margin-top: 60px;
     .conoce__title {
         display: flex;
         justify-content: center;
@@ -137,8 +139,11 @@
                 .ciudades {
                     .mun__text {
                         display: flex;
+                        justify-content: center;
                         align-items: center;
+                        margin-top: 60px;
                         cursor: pointer;
+                        text-decoration: none;
                     }
 
                     .bar {

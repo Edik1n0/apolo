@@ -843,7 +843,7 @@
   cursor: pointer;
 }
 .claims .container .claims__fig .claim-a .img__claim {
-  width: 80px;
+  width: 100px;
 }
 .claims .container .claims__fig .claim-a .txt__claim {
   margin-top: 20px;
@@ -1012,8 +1012,8 @@
 
 @font-face {
   font-family: "fontello";
-  src: url("../font/fontello.eot?7215372");
-  src: url("../font/fontello.eot?7215372#iefix") format("embedded-opentype"), url("../font/fontello.woff2?7215372") format("woff2"), url("../font/fontello.woff?7215372") format("woff"), url("../font/fontello.ttf?7215372") format("truetype"), url("../font/fontello.svg?7215372#fontello") format("svg");
+  src: url("../font/fontello.eot?16530153");
+  src: url("../font/fontello.eot?16530153#iefix") format("embedded-opentype"), url("../font/fontello.woff2?16530153") format("woff2"), url("../font/fontello.woff?16530153") format("woff"), url("../font/fontello.ttf?16530153") format("truetype"), url("../font/fontello.svg?16530153#fontello") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -1023,7 +1023,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'fontello';
-    src: url('../font/fontello.svg?7215372#fontello') format('svg');
+    src: url('../font/fontello.svg?16530153#fontello') format('svg');
   }
 }
 */
@@ -1031,6 +1031,7 @@
   font-family: "fontello";
   font-style: normal;
   font-weight: normal;
+  /* speak: never; */
   display: inline-block;
   text-decoration: inherit;
   width: 1em;
@@ -1159,11 +1160,26 @@
 }
 
 /* '' */
+.icon-adult:before {
+  content: "";
+}
+
+/* '' */
 .icon-menu:before {
   content: "";
 }
 
 /* '' */
+.icon-user-md:before {
+  content: "";
+}
+
+/* '' */
+.icon-medkit:before {
+  content: "";
+}
+
+/* '' */
 .icon-youtube-play:before {
   content: "";
 }
@@ -1206,7 +1222,7 @@
   bottom: 500px;
   left: 980px;
   z-index: 1;
-  background: #04B2A9;
+  background: #133D87;
   color: #fff;
   width: 440px;
   height: 460px;
@@ -1251,14 +1267,15 @@
 }
 .section__map .map__body .map__txt--box .boton_mapa {
   background: #212529;
-  color: #04B2A9;
-  border-radius: 12px 0px;
+  color: #fff;
+  border-radius: 8px;
   padding: 4px;
   margin-top: 16px;
 }
 .section__map .map__body .map__txt--box .boton_mapa:hover {
   transition: all 0.6s;
   background: #fff;
+  color: #133D87;
 }
 .section__map .map__body .map__txt--box .modal .modal-dialog .modal-content {
   color: #212529;
@@ -1287,6 +1304,9 @@
   color: #04B2A9;
 }
 
+.conoce {
+  margin-top: 60px;
+}
 .conoce .conoce__title {
   display: flex;
   justify-content: center;
@@ -1305,8 +1325,11 @@
 }
 .conoce .conoce__body .container .section__map .ciudades .mun__text {
   display: flex;
+  justify-content: center;
   align-items: center;
+  margin-top: 60px;
   cursor: pointer;
+  text-decoration: none;
 }
 .conoce .conoce__body .container .section__map .ciudades .bar {
   display: flex;
@@ -1696,7 +1719,7 @@
 body {
   background: #212529;
   color: #fff;
-  font-family: "Poppins", sans-serif;
+  font-family: "Noto Sans JP", sans-serif;
 }
 
 .menu_redes {
@@ -1817,12 +1840,14 @@ body {
 
 .icon-home,
 .icon-briefcase,
+.icon-medkit,
 .icon-picture,
 .icon-phone {
   color: #fff;
 }
 .icon-home:hover,
 .icon-briefcase:hover,
+.icon-medkit:hover,
 .icon-picture:hover,
 .icon-phone:hover {
   transition: all 0.6s;
