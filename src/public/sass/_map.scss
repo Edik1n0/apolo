@@ -79,12 +79,15 @@
                 }
 
                 .modal {
+                    .icon-cancel {
+                        cursor: pointer;
+                    }
                     .modal-dialog {
                         .modal-content {
-                            color: $gris;
-
+                            background: $Gris;
                             .modal-header {
                                 text-align: center;
+                                color: $bl;
                             }
 
                             .modal-body {
