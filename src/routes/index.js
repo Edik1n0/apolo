@@ -9,6 +9,10 @@ router.get('/nosotros', (req, res) => {
     res.render('./layouts/nosotros');
 });
 
+router.get('/voluntarios', (req, res) => {
+    res.render('./layouts/voluntarios');
+});
+
 router.get('/servicios', (req, res) => {
     res.render('./layouts/servicios');
 });

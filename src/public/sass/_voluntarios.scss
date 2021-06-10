@@ -1,0 +1,91 @@
+.voluntarios {
+    .container {
+        margin-top: 60px;
+        margin-bottom: 60px;
+        padding: 20px;
+        .vol__body {
+            .container {
+                .vol__section {
+                    .vol__row {
+                        display: flex;
+                        justify-content: space-evenly;
+                        width: 100%;
+                        height: 710px;
+
+                        .vol__item {
+                            background: $Gris;
+                            width: 46%;
+                            height: 380px;
+                            border-radius: 8px;
+                            margin: 20px;
+                            padding: 20px;
+                            text-align: center;
+                            display: block;
+                            cursor: pointer;
+
+                            h3 {
+                                font-size: 24px;
+                            }
+
+                            h4 {
+                                font-size: 20px;
+                            }
+
+                            p {
+                                font-size: 16px;
+                                margin: 10px;
+                            }
+
+                            .vol__desc {
+                                opacity: 0%;
+                                p {
+                                    height: 266px;
+                                }
+                            }
+
+                            img {
+                                width: 220px;
+                                margin: 10px;
+                            }
+
+                            &:hover {
+                                transition: all 0.4s;
+                                height: 650px;
+                                .vol__desc {
+                                    transition: all 0.6s;
+                                    opacity: 100%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 320px) and (max-width: 1024px) {
+    .voluntarios {
+        .container {
+            padding: 0px;
+            .vol__body {
+                .container {
+                    padding: 0px;
+                    .vol__section {
+                        width: 100%;
+                        .vol__row {
+                            display: block;
+                            width: 100%;
+                            height: auto;
+
+                            .vol__item {
+                                width: 90%;
+                                padding: 20px 0px 20px 0px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

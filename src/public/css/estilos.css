@@ -1759,9 +1759,6 @@
 }
 
 @media (min-width: 320px) and (max-width: 1024px) {
-  .conoce {
-    margin-top: 320px;
-  }
   .conoce .conoce__body .container {
     display: block;
   }
@@ -1905,12 +1902,87 @@
 }
 
 @media (min-width: 320px) and (max-width: 1024px) {
+  .vb {
+    height: auto;
+    padding: 10px;
+  }
   .vb .container {
     display: block;
   }
   .vb .container .video__section,
 .vb .container .text__section {
     width: 100%;
+  }
+}
+.voluntarios .container {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  padding: 20px;
+}
+.voluntarios .container .vol__body .container .vol__section .vol__row {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 710px;
+}
+.voluntarios .container .vol__body .container .vol__section .vol__row .vol__item {
+  background: #15171a;
+  width: 46%;
+  height: 380px;
+  border-radius: 8px;
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+  display: block;
+  cursor: pointer;
+}
+.voluntarios .container .vol__body .container .vol__section .vol__row .vol__item h3 {
+  font-size: 24px;
+}
+.voluntarios .container .vol__body .container .vol__section .vol__row .vol__item h4 {
+  font-size: 20px;
+}
+.voluntarios .container .vol__body .container .vol__section .vol__row .vol__item p {
+  font-size: 16px;
+  margin: 10px;
+}
+.voluntarios .container .vol__body .container .vol__section .vol__row .vol__item .vol__desc {
+  opacity: 0%;
+}
+.voluntarios .container .vol__body .container .vol__section .vol__row .vol__item .vol__desc p {
+  height: 266px;
+}
+.voluntarios .container .vol__body .container .vol__section .vol__row .vol__item img {
+  width: 220px;
+  margin: 10px;
+}
+.voluntarios .container .vol__body .container .vol__section .vol__row .vol__item:hover {
+  transition: all 0.4s;
+  height: 650px;
+}
+.voluntarios .container .vol__body .container .vol__section .vol__row .vol__item:hover .vol__desc {
+  transition: all 0.6s;
+  opacity: 100%;
+}
+
+@media (min-width: 320px) and (max-width: 1024px) {
+  .voluntarios .container {
+    padding: 0px;
+  }
+  .voluntarios .container .vol__body .container {
+    padding: 0px;
+  }
+  .voluntarios .container .vol__body .container .vol__section {
+    width: 100%;
+  }
+  .voluntarios .container .vol__body .container .vol__section .vol__row {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  .voluntarios .container .vol__body .container .vol__section .vol__row .vol__item {
+    width: 90%;
+    padding: 20px 0px 20px 0px;
   }
 }
 body {
@@ -2346,7 +2418,7 @@ a:hover {
   .carousel__videomob iframe {
     border: 0;
     width: 100%;
-    height: 490px;
+    height: 590px;
   }
 
   .static__bg {
@@ -2509,7 +2581,7 @@ a:hover {
   .carousel__videomob iframe {
     border: 0;
     width: 100%;
-    height: 490px;
+    height: 590px;
   }
 
   .static__bg {
@@ -2672,7 +2744,7 @@ a:hover {
   .carousel__videomob iframe {
     border: 0;
     width: 100%;
-    height: 490px;
+    height: 590px;
   }
 
   .static__bg {
@@ -2835,7 +2907,7 @@ a:hover {
   .carousel__videomob iframe {
     border: 0;
     width: 100%;
-    height: 490px;
+    height: 590px;
   }
 
   .static__bg {
@@ -2998,7 +3070,7 @@ a:hover {
   .carousel__videomob iframe {
     border: 0;
     width: 100%;
-    height: 490px;
+    height: 590px;
   }
 
   .static__bg {
