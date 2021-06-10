@@ -1,343 +1,68 @@
-.ser {
-    margin-top: 80px;
-    position: relative;
+.apolo__servicios {
+    margin-top: 60px;
+    margin-bottom: 60px;
     .container {
-        .ser__header {
-            text-align: center;
-            p {
-                margin-top: 16px;
-            }
-        }
-
-        .ser__body {
-            margin-top: 80px;
-            .container {
-                display: block;
-                .ser__item {
-                    margin-top: 60px;
+        padding: 40px;
+        .serv__body {
+            .serv__section {
+                .serv__item {
                     display: flex;
-                    justify-content: space-evenly;
+                    text-align: start;
+                    justify-content: center;
                     align-items: center;
+                    margin: 20px;
+                    padding: 20px;
+                    position: relative;
+
+                    .serv__desc {
+                        width: 560px;
+                    }
 
                     .serv__img {
-                        position: relative;
                         img {
-                            width: 520px;
-                        }
-                    }
+                            width: 200px;
+                            height: 200px;
+                            border-radius: 100%;
+                            border: 4px solid $bl;
+                            margin-right: 20px;
+                            opacity: 80%;
+                            cursor: pointer;
 
-                    .serv__txt {
-                        display: block;
-                        width: 50%;
-
-                        .serv__icons {
-                            img {
-                                height: 40px;
-                                margin: 20px;
+                            &:hover {
+                                transition: all 0.6s;
+                                border: 4px solid $Blue;
+                                opacity: 100%;
                             }
                         }
                     }
                 }
-
-                .basics {
-                    margin-top: 60px;
-                }
-
-                .serv__end {
-                    margin-top: 80px;
-                    text-align: center;
-                    width: 40%;
-                    margin-left: 30%;
-                }
             }
         }
     }
 }
 
-.diseno {
-    .info__producto {
-        .carousel {
-            display: block;
-            img {
-                width: 100%;
-            }
-        }
-
-        .carr__mobile {
-            display: none;
-        }
-
+@media (min-width: 320px) and (max-width: 1024px) {
+    .apolo__servicios {
         .container {
-            text-align: center;
-        }
-    }
-}
-
-.miga {
-    margin-top: 40px;
-}
-
-.boton__solicitud {
-    display: flex;
-    justify-content: center;
-    margin: 20px;
-    .boton_producto {
-        background: $Aqua;
-        color: $bl;
-        border-radius: 12px 0px;
-        margin: 20px;
-        &:hover {
-            transition: all 0.6s;
-            background: $bl;
-            color: $Aqua;
-        }
-    }
-}
-
-@media (min-width: 320px) and (max-width: 374px) {
-    .inner__con {
-        display: none;
-    }
-
-    .ser {
-        .container {
-            text-align: center;
-
-            .ser__body {
-                .container {
-                    .basics {
-                        text-align: center;
-                    }
-
-                    .ser__item {
+            padding: 20px;
+            .serv__body {
+                .serv__section {
+                    .serv__item {
                         display: block;
+                        padding: 0px;
+                        margin: 20px 0px 0px 0px;
+                        text-align: center;
 
                         .serv__img {
                             img {
-                                width: 100%;
+                                margin: 10px 0px 10px 0px;
                             }
                         }
 
-                        .serv__txt {
+                        .serv__desc {
                             width: 100%;
                         }
                     }
-                }
-            }
-        }
-    }
-
-    .diseno {
-        text-align: center;
-        .info__producto {
-            .carousel {
-                display: none;
-            }
-
-            .carr__mobile {
-                display: block;
-                .carousel {
-                    display: block;
-                }
-            }
-        }
-    }
-}
-
-@media (min-width: 375px) and (max-width: 409px) {
-    .inner__con {
-        display: none;
-    }
-
-    .ser {
-        .container {
-            text-align: center;
-
-            .ser__body {
-                .container {
-                    .basics {
-                        text-align: center;
-                    }
-
-                    .ser__item {
-                        display: block;
-
-                        .serv__img {
-                            img {
-                                width: 100%;
-                            }
-                        }
-
-                        .serv__txt {
-                            width: 100%;
-                        }
-                    }
-                }
-            }
-        }
-    }
-
-    .diseno {
-        text-align: center;
-        .info__producto {
-            .carousel {
-                display: none;
-            }
-
-            .carr__mobile {
-                display: block;
-                .carousel {
-                    display: block;
-                }
-            }
-        }
-    }
-}
-
-@media (min-width: 410px) and (max-width: 539px) {
-    .inner__con {
-        display: none;
-    }
-
-    .ser {
-        .container {
-            text-align: center;
-
-            .ser__body {
-                .container {
-                    .basics {
-                        text-align: center;
-                    }
-
-                    .ser__item {
-                        display: block;
-
-                        .serv__img {
-                            img {
-                                width: 100%;
-                            }
-                        }
-
-                        .serv__txt {
-                            width: 100%;
-                        }
-                    }
-                }
-            }
-        }
-    }
-
-    .diseno {
-        text-align: center;
-        .info__producto {
-            .carousel {
-                display: none;
-            }
-
-            .carr__mobile {
-                display: block;
-                .carousel {
-                    display: block;
-                }
-            }
-        }
-    }
-}
-
-@media (min-width: 540px) and (max-width: 767px) {
-    .inner__con {
-        display: none;
-    }
-
-    .ser {
-        .container {
-            text-align: center;
-
-            .ser__body {
-                .container {
-                    .basics {
-                        text-align: center;
-                    }
-
-                    .ser__item {
-                        display: block;
-
-                        .serv__img {
-                            img {
-                                width: 100%;
-                            }
-                        }
-
-                        .serv__txt {
-                            width: 100%;
-                        }
-                    }
-                }
-            }
-        }
-    }
-
-    .diseno {
-        text-align: center;
-        .info__producto {
-            .carousel {
-                display: none;
-            }
-
-            .carr__mobile {
-                display: block;
-                .carousel {
-                    display: block;
-                }
-            }
-        }
-    }
-}
-
-@media (min-width: 768px) and (max-width: 1024px) {
-    .inner__con {
-        display: none;
-    }
-
-    .ser {
-        .container {
-            text-align: center;
-
-            .ser__body {
-                .container {
-                    .basics {
-                        text-align: center;
-                    }
-
-                    .ser__item {
-                        display: block;
-
-                        .serv__img {
-                            img {
-                                width: 100%;
-                            }
-                        }
-
-                        .serv__txt {
-                            width: 100%;
-                        }
-                    }
-                }
-            }
-        }
-    }
-
-    .diseno {
-        text-align: center;
-        .info__producto {
-            .carousel {
-                display: none;
-            }
-
-            .carr__mobile {
-                display: block;
-                .carousel {
-                    display: block;
                 }
             }
         }
