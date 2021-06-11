@@ -1,5 +1,21 @@
 const express = require('express');
 const router = express.Router();
+const pool = require('../db');
+const flash = require('connect-flash');
+
+router.post('/registro-usuario', async (req, res) => {
+    const { nombre, email, phone, description, checkbox } = req.body;
+    const newUser = {
+        nombre,
+        email,
+        phone,
+        description,
+        checkbox
+    };
+    await pool.query('INSERT INTO usuarios SET ?', [newUser]) // Guardar a base de dates
+    req.flash('success', 'Datos enviados correctamente; en un momento nos pondremos en contacto');
+    res.redirect('/');
+});
 
 router.get('/', (req, res) => {
     res.render('./partials/home');

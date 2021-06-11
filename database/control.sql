@@ -12,3 +12,11 @@
     
 -- ALTER TABLE cusers
 -- 	MODIFY id INT(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT = 2;
+
+-- ALTER TABLE cusers
+-- 	created_at timestamp NOT NULL DEFAULT current_timestamp()
+
+-- 
+
+-- ALTER TABLE cusers
+-- 	MODIFY check VARCHAR(5) NULL;
