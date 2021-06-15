@@ -38,78 +38,10 @@
     }
 }
 
-@media (min-width: 320px) and (max-width: 374px) {
+@media (min-width: 320px) and (max-width: 1024px) {
     .claims {
         text-align: center;
-        .container {
-            .claims__fig {
-                display: none;
-            }
-
-            .claims__mob {
-                margin-top: 40px;
-                display: block;
-                text-align: center;
-                .claim-a {
-                    margin: 40px 20px 40px 20px;
-                    .img__claim {
-                        width: 80px;
-                    }
-                }
-            }
-        }
-    }
-}
-
-@media (min-width: 375px) and (max-width: 409px) {
-    .claims {
-        text-align: center;
-        .container {
-            .claims__fig {
-                display: none;
-            }
-
-            .claims__mob {
-                margin-top: 40px;
-                display: block;
-                text-align: center;
-                .claim-a {
-                    margin: 40px 20px 40px 20px;
-                    .img__claim {
-                        width: 80px;
-                    }
-                }
-            }
-        }
-    }
-}
-
-@media (min-width: 410px) and (max-width: 539px) {
-    .claims {
-        text-align: center;
-        .container {
-            .claims__fig {
-                display: none;
-            }
-
-            .claims__mob {
-                margin-top: 40px;
-                display: block;
-                text-align: center;
-                .claim-a {
-                    margin: 40px 20px 40px 20px;
-                    .img__claim {
-                        width: 80px;
-                    }
-                }
-            }
-        }
-    }
-}
-
-@media (min-width: 540px) and (max-width: 767px) {
-    .claims {
-        text-align: center;
+        margin-top: 10px;
         .container {
             .claims__fig {
                 display: none;

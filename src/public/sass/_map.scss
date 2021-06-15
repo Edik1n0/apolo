@@ -137,52 +137,53 @@
         .container {
             width: 100%;
             display: flex;
-            justify-content: center;
+            padding-left: 14%;
 
             .section__map {
                 display: block;
-                width: 60%;
+                width: 70%;
 
                 .ciudades {
+
+                    .modal {
+                        .modal-dialog {
+                            .modal-content {
+                                .modal-body {
+                                    .container {
+                                        display: block;
+                                        padding-left: 16%;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
                     .mun__text {
                         display: flex;
                         justify-content: center;
                         align-items: center;
                         margin-top: 60px;
-                        cursor: pointer;
                         text-decoration: none;
+                        a,
                         p {
+                            cursor: pointer;
                             i {
                                 transition: all 0.8s;
                                 font-size: 8px;
                                 display: none;
                             }
                         }
-                    }
 
-                    .mun__cont {
-                        transition: all 0.8s;
-                        display: none;
-                        justify-content: center;
-                        background: $Gris;
-                        width: 220px;
-                        height: 240px;
-                        border-radius: 10px;
-
-                        .cont__title {
-                            text-align: center;
-                            height: 34px;
-                            padding: 6px;
-                        }
-
-                        .cont__body {
-                            display: block;
-                            text-align: center;
-                            font-size: 10px;
-
-                            .map__min {
-                                width: 180px;
-                                border-radius: 10px;
+                        .modal-body {
+                            justify-content: center;
+                            margin-bottom: 20px;
+                            .container {
+                                display: block;
+                                padding-left: 15%;
+                                margin-bottom: 20px;
+                                .card {
+                                    margin: 20px;
+                                }
                             }
                         }
                     }
@@ -369,11 +370,6 @@
                                 }
                             }
 
-                            .mun__cont {
-                                transition: all 0.8s;
-                                display: block;
-                            }
-
                             .mun__img {
                                 transition: all 0.6s;
                                 .bello-blanco {
@@ -390,55 +386,52 @@
                     }
 
                     .medellin {
-                        display: flex;
-                        justify-content: space-between;
-                        margin: 10px;
-                        height: 40px;
-
-                        .mun__img {
-                            .medellin-blanco {
-                                position: relative;
-                                bottom: 14px;
-                                right: 26px;
-                            }
-
-                            .medellin-azul {
-                                display: none;
-                                position: relative;
-                                bottom: 14px;
-                                right: 26px;
-                            }
-                        }
-
-                        &:hover {
-                            transition: all 0.6s;
-                            .mun__text {
-                                transition: all 0.6s;
-                                color: $Green;
-
-                                p {
-                                    i {
-                                        transition: all 0.8s;
-                                        display: block;
-                                    }
-                                }
-                            }
-
-                            .mun__cont {
-                                transition: all 0.8s;
-                                display: block;
-                            }
+                        .med__data {
+                            display: flex;
+                            justify-content: space-between;
+                            margin: 10px;
+                            height: 40px;
 
                             .mun__img {
-                                transition: all 0.6s;
                                 .medellin-blanco {
-                                    transition: all 0.6s;
-                                    display: none;
+                                    position: relative;
+                                    bottom: 14px;
+                                    right: 26px;
                                 }
 
                                 .medellin-azul {
+                                    display: none;
+                                    position: relative;
+                                    bottom: 14px;
+                                    right: 26px;
+                                }
+                            }
+
+                            &:hover {
+                                transition: all 0.6s;
+                                .mun__text {
                                     transition: all 0.6s;
-                                    display: block;
+                                    color: $Green;
+
+                                    p {
+                                        i {
+                                            transition: all 0.8s;
+                                            display: block;
+                                        }
+                                    }
+                                }
+
+                                .mun__img {
+                                    transition: all 0.6s;
+                                    .medellin-blanco {
+                                        transition: all 0.6s;
+                                        display: none;
+                                    }
+
+                                    .medellin-azul {
+                                        transition: all 0.6s;
+                                        display: block;
+                                    }
                                 }
                             }
                         }
@@ -722,18 +715,29 @@
                     .ciudades {
                         position: relative;
                         right: 116px;
+
+                        .modal {
+                            img {
+                                width: 100%;
+                            }
+                            .modal-dialog {
+                                .modal-content {
+                                    .modal-body {
+                                        .container {
+                                            display: block;
+                                            padding: 12px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
                         .mun__text {
                             opacity: 0%;
                         }
 
                         img {
                             width: 70%;
-                        }
-
-                        .mun__cont {
-                            position: relative;
-                            left: 130px;
-                            top: 260px;
                         }
 
                         .bar {
@@ -790,6 +794,7 @@
                                 .bello-azul {
                                     bottom: 22px;
                                     right: 46px;
+                                    z-index: 2;
                                 }
                             }
 
@@ -797,44 +802,43 @@
                                 .mun__img {
                                     .bello-blanco {
                                         display: none;
-                                        bottom: 22px;
-                                        right: 46px;
                                     }
 
                                     .bello-azul {
                                         display: block;
-                                        bottom: 22px;
-                                        right: 98px;
-                                        width: 110%;
+                                        bottom: 28px;
+                                        right: 86px;
+                                        z-index: 2;
+                                        width: 110px;
                                     }
                                 }
                             }
                         }
 
                         .medellin {
-                            .mun__img {
-                                .medellin-blanco,
-                                .medellin-azul {
-                                    bottom: 34px;
-                                    right: 0px;
-                                    left: 12px;
-                                }
-                            }
-
-                            &:hover {
+                            .med__data {
                                 .mun__img {
-                                    .medellin-blanco {
-                                        display: none;
-                                        left: -136px;
-                                        width: 184%;
-                                        bottom: 28px;
-                                    }
-
+                                    .medellin-blanco,
                                     .medellin-azul {
-                                        display: block;
-                                        left: -136px;
-                                        width: 184%;
-                                        bottom: 28px;
+                                        bottom: 32px;
+                                        right: 0px;
+                                        left: 4px;
+                                        width: 72%;
+                                    }
+                                }
+
+                                &:hover {
+                                    .mun__img {
+                                        .medellin-blanco {
+                                            display: none;
+                                        }
+
+                                        .medellin-azul {
+                                            display: block;
+                                            left: -56px;
+                                            width: 174px;
+                                            bottom: 36px;
+                                        }
                                     }
                                 }
                             }
